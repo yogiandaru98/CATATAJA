@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CATATAJA">
         <activity
-            android:name=".Activity.SplashScreen"
+            android:name=".Activity.UpdateNotesActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.InsertNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

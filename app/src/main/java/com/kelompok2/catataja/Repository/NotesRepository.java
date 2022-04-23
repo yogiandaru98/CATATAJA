@@ -16,7 +16,7 @@ public class NotesRepository {
     public LiveData<List<Notes>> getallNotes;
 
 
-    NotesDatabase database = NotesDatabase.getDatabaseInstance();
+//    NotesDatabase database = NotesDatabase.getDatabaseInstance();
 
     public NotesRepository(Application application){
         NotesDatabase database = NotesDatabase.getDatabaseInstance(application);
