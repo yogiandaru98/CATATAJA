@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CATATAJA">
         <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
