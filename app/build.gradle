@@ -54,5 +54,4 @@ dependencies {
     //noinspection GradleDependency
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
     implementation "android.arch.lifecycle:extensions:1.1.1"
-
 }

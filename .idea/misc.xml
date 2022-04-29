@@ -12,12 +12,13 @@
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/drawable/ic_logo.xml" value="0.2375" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/drawable/red_shape.xml" value="0.197" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/drawable/yellow_shape.xml" value="0.197" />
+        <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/font/roboto_medium.xml" value="0.20092592592592592" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/activity_insert.xml" value="0.349748743718593" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/activity_insert_notes.xml" value="0.25" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/activity_main.xml" value="0.3541666666666667" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/activity_update_notes.xml" value="0.23278985507246377" />
-        <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/item_notes.xml" value="0.5" />
+        <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/layout/item_notes.xml" value="0.33" />
         <entry key="..\:/MobileProject/CATATAJA/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.208" />
       </map>
     </option>
