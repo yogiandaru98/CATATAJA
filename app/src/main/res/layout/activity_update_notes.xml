@@ -62,7 +62,6 @@
                 android:id="@+id/greenPriority"
                 android:layout_width="25dp"
                 android:layout_margin="10dp"
-                android:src="@drawable/ic_baseline_check_24"
                 android:layout_height="25dp"
                 android:background="@drawable/green_shape"
                 />

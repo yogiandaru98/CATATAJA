@@ -17,14 +17,23 @@ import com.kelompok2.catataja.MainActivity;
 import com.kelompok2.catataja.Model.Notes;
 import com.kelompok2.catataja.R;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.notesViewholder> {
     MainActivity mainActivity;
     List<Notes> notes;
+    List<Notes> allNotesitem;
     public NotesAdapter(MainActivity mainActivity, List<Notes> notes) {
         this.mainActivity = mainActivity;
         this.notes = notes;
+        allNotesitem=new ArrayList<>(notes);
+    }
+
+    public void searchNotes(List<Notes> filterredName) {
+        this.notes=filterredName;
+        notifyDataSetChanged();
+
     }
 
     public notesViewholder onCreateViewHolder(ViewGroup parent, int viewType) {

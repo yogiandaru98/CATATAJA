@@ -6,8 +6,69 @@
     android:layout_height="match_parent"
     android:background="#E8E8E8"
     tools:context=".MainActivity">
+    <HorizontalScrollView
+        android:id="@+id/filter2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/filter"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/filter"/>
+
+            <TextView
+                android:id="@+id/nofilter"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/filter_un_shape"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Tanpa Filter"/>
+            <TextView
+                android:id="@+id/hightolow"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/filter_un_shape"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Penting ke Sekunder"/>
+
+            <TextView
+                android:id="@+id/lowtohigh"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/filter_un_shape"
+                android:fontFamily="@font/roboto_medium"
+                android:paddingStart="10dp"
+                android:paddingTop="7dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="7dp"
+                android:text="Sekunder ke Penting" />
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/filter2"
         android:id="@+id/notesRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
