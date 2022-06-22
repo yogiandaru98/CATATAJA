@@ -18,6 +18,8 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
+
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kelompok2.catataja.Activity.InsertNotesActivity;
 import com.kelompok2.catataja.Adapter.NotesAdapter;
@@ -48,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         lowtohigh = findViewById(R.id.lowtohigh);
 
         nofilter.setBackgroundResource(R.drawable.filter_selected_shape);
-
+//        loadData(0);
         nofilter.setOnClickListener(v -> {
             loadData(0);
             hightolow.setBackgroundResource(R.drawable.filter_un_shape);
@@ -72,7 +74,15 @@ public class MainActivity extends AppCompatActivity {
 
         newNotesBtn.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, InsertNotesActivity.class)));
 
-        notesViewModel.getallNotes.observe(this, notes -> setAdapter(notes));
+//        notesViewModel.getallNotes.observe(this, notes -> setAdapter(notes));
+        notesViewModel.getallNotes.observe(this, new Observer<List<Notes>>() {
+            @Override
+            public void onChanged(List<Notes> notes) {
+                setAdapter(notes);
+
+                filternotesalllist = notes;
+            }
+        });
     }
     private void  loadData(int i){
         if(i ==0){
@@ -140,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Notes> FilterNames = new ArrayList<>();
 
         for (Notes notes :this.filternotesalllist){
-            if (notes.notesTitle.contains(newText)||notes.notesSubtitle.contains(newText)){
+            if (notes.notesTitle.toLowerCase().contains(newText.toLowerCase())||notes.notesSubtitle.toLowerCase().contains(newText.toLowerCase())){
                 FilterNames.add(notes);
             }
         }
